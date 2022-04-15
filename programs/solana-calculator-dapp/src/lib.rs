@@ -3,7 +3,7 @@ use anchor_lang::prelude::*;
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
 #[program]
-pub mod mycalculatorapp {
+pub mod solana_calculator_dapp {
     use anchor_lang::solana_program::entrypoint::ProgramResult;
 
     use super::*;
