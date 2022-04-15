@@ -14,3 +14,12 @@ pub mod mycalculatorapp {
         Ok(())
     }
 }
+
+#[derive(Accounts)]
+pub struct Create<'info> {
+    #[account(init, payer=user, space=264)]
+    pub calculator: Account<'info, Calculator>,
+    #[account(mut)]
+    pub user: Signer<'info>,
+    pub system_program: Program<'info, System>,
+}
